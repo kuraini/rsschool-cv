@@ -44,3 +44,4 @@ const digits = (n) => String(n).length;
 ---
 ## English level:
 B1 (Intermediate)  
+[EF SET Certificate](https://www.efset.org/cert/uj1CUd)   
