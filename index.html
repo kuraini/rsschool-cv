@@ -7,6 +7,164 @@
   <title>CV - Svetlana Borisova</title>
 </head>
 <body>
-  <h1>Svetlana Borisova</h1>
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-header-nav nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+      </nav>      
+    </div>    
+  </header>
+
+  <main class="main">
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">
+          <span class="page-title-name">Svetlana Borisova</span>
+          <span class="page-title-position">Junior Front-end Developer</span>
+        </h1>
+        <div class="page-img-wrapper">
+          <img class="page-img" src="img/photo.jpg" alt="My photo">
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts-title title">Contacts</h2>
+
+        <ul class="contacts-list">
+          <li class="contacts_item">
+            <p class="contacts-text contacts-text--mail">E-mail: 
+              <a class="contacts-link" href="mailto:kuraini7@gmail.com">kuraini7@gmail.com</a>
+            </p>
+          </li>
+          <li class="contacts_item">
+            <p class="contacts-text contacts-text--github">GitHub: 
+              <a class="contacts-link" href="https://github.com/kuraini">kuraini</a>
+            </p>
+          </li>
+          <li class="contacts_item">
+            <p class="contacts-text contacts-text--discord">Discord: Svetlana#9249
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about-title title">About me</h2>
+        <p class="about-text">I became interested in creating websites at the university. 
+          My speciality was not related to Computer Science. I have a degree in advertising. 
+          But we had a web design course. It fascinating me. I started and successfully completed 
+          several courses at HTML Academy. And I keep learning since on.
+        </p>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="skills-title title">Skills</h2>
+
+        <ul class="skills-list">
+          <li class="skills-item">HTML & CSS</li>
+          <li class="skills-item">SCSS</li>
+          <li class="skills-item">JavaScript Basics</li>
+          <li class="skills-item">Git & Github</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="code" id="code">
+      <div class="container">
+        <h2 class="code-title title">Code example</h2>
+
+        <pre class="code-example">
+          <code class="code-js">
+            function even_or_odd(number) {
+              return number % 2 ? 'Odd' : 'Even';
+            }
+          </code>
+        </pre>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="projects-title title">Projects</h2>
+
+        <ul class="projects-list">
+          <li class="projects-item">
+            <h3 class="projects-title">Sedona</h3>
+            <p class="project-text">An adaptive landing page about Sedona. Made with:
+              <ul class="projects-technology technology-list">
+                <li class="technology-item">HTML</li>
+                <li class="technology-item">BEM naming</li>
+                <li class="technology-item">SCSS</li>
+                <li class="technology-item">Flexbox layout</li>
+              </ul>
+            </p>
+            <a href="#" class="projects-item-link">View project</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="education" id="education">
+      <div class="container">
+        <h2 class="education-title title">Education</h2>
+
+        <ul class="education-list">
+          <li class="education-item">
+            <a class="education-link" href="https://rs.school/js-stage0/" target="_blank">
+              RS School Course "JavaScript/Front-end. Stage 0"
+            </a>
+            (in progress)
+          </li>
+
+          <li class="education-item">
+            <a class="education-link" href="https://htmlacademy.ru/" target="_blank">HTML Academy courses:</a> 
+            <ul class="education-nested-list">
+              <li class="education-nested-item">Professional HTML & CSS, level 1</li>
+              <li class="education-nested-item">Professional HTML & CSS, level 2</li>
+            </ul>
+          </li>
+          
+          <li class="education-item">Moscow University of finance and law</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="english" id="english">
+      <div class="container">
+        <h2 class="english-title title">English</h2>
+        <p class="english-text">
+          B1 (Intermediate)
+          <a class="english-link" href="https://www.efset.org/cert/uj1CUd">EF SET Certificate</a>
+        </p>
+      </div>  
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <a class="footer-link-rsschool" href="https://rs.school/js/" target="_blank">
+        <span class="visible-hidden">RSSchool - Course "JavaScript/Front-end"</span>
+        <img class="footer-link-rsschool-logo" src="img/rs_school_logo.png" width="83" height="30" alt="RSSchool logo">
+      </a>
+      <a class="footer-link-github" href="https://github.com/kuraini" target="_blank">
+        <span class="visible-hidden">My github account</span>
+      </a>
+      <span class="footer-year">2022</span>
+    </div>
+  </footer>
 </body>
 </html>
