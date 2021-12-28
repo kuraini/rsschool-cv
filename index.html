@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon3.ico">
   <title>CV - Svetlana Borisova</title>
 </head>
 <body>
-  <header class="main-header">
+  <header class="header">
     <div class="container">
-      <nav class="main-header-nav nav">
+      <nav class="header-nav nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
@@ -24,20 +25,18 @@
   </header>
 
   <main class="main">
-    <section class="page-header">
-      <div class="container">
-        <h1 class="page-title">
-          <span class="page-title-name">Svetlana Borisova</span>
-          <span class="page-title-position">Junior Front-end Developer</span>
+    <div class="container">
+      <section class="profile">
+        <h1 class="profile-title">
+          <span class="profile-name">Svetlana Borisova</span>
+          <span class="profile-position">Junior Front-end Developer</span>
         </h1>
-        <div class="page-img-wrapper">
-          <img class="page-img" src="img/photo.jpg" alt="My photo">
+        <div class="profile-img-wrapper">
+          <img class="profile-img" src="assets/img/photo.jpg" alt="My photo" width="200" height="200">
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contacts" id="contacts">
-      <div class="container">
+      <section class="contacts" id="contacts">
         <h2 class="contacts-title title">Contacts</h2>
 
         <ul class="contacts-list">
@@ -56,22 +55,18 @@
             </p>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="about" id="about">
-      <div class="container">
+      <section class="about" id="about">
         <h2 class="about-title title">About me</h2>
         <p class="about-text">I became interested in creating websites at the university. 
-          My speciality was not related to Computer Science. I have a degree in advertising. 
-          But we had a web design course. It fascinating me. I started and successfully completed 
+          My speciality was not related to Computer Science. I have a diploma in advertising. 
+          But we had a web design course. It fascinated me. I started and successfully completed 
           several courses at HTML Academy. And I keep learning since on.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section class="skills" id="skills">
-      <div class="container">
+      <section class="skills" id="skills">
         <h2 class="skills-title title">Skills</h2>
 
         <ul class="skills-list">
@@ -80,11 +75,9 @@
           <li class="skills-item">JavaScript Basics</li>
           <li class="skills-item">Git & Github</li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="code" id="code">
-      <div class="container">
+      <section class="code" id="code">
         <h2 class="code-title title">Code example</h2>
 
         <pre class="code-example">
@@ -94,16 +87,15 @@
             }
           </code>
         </pre>
-      </div>
-    </section>
+      </section>
 
-    <section class="projects" id="projects">
-      <div class="container">
+      <section class="projects" id="projects">
         <h2 class="projects-title title">Projects</h2>
 
         <ul class="projects-list">
           <li class="projects-item">
             <h3 class="projects-title">Sedona</h3>
+            <img class="projects-img" src="assets/img/sedona.png" alt="Sedona" width="180" height="240">
             <p class="project-text">An adaptive landing page about Sedona. Made with:
               <ul class="projects-technology technology-list">
                 <li class="technology-item">HTML</li>
@@ -115,11 +107,9 @@
             <a href="#" class="projects-item-link">View project</a>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="education" id="education">
-      <div class="container">
+      <section class="education" id="education">
         <h2 class="education-title title">Education</h2>
 
         <ul class="education-list">
@@ -140,25 +130,23 @@
           
           <li class="education-item">Moscow University of finance and law</li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section class="english" id="english">
-      <div class="container">
+      <section class="english" id="english">
         <h2 class="english-title title">English</h2>
         <p class="english-text">
           B1 (Intermediate)
           <a class="english-link" href="https://www.efset.org/cert/uj1CUd">EF SET Certificate</a>
         </p>
-      </div>  
-    </section>
+      </section>
+    </div>
   </main>
   
   <footer class="footer">
     <div class="container">
       <a class="footer-link-rsschool" href="https://rs.school/js/" target="_blank">
         <span class="visible-hidden">RSSchool - Course "JavaScript/Front-end"</span>
-        <img class="footer-link-rsschool-logo" src="img/rs_school_logo.png" width="83" height="30" alt="RSSchool logo">
+        <img class="footer-link-rsschool-logo" src="assets/svg/rs_school_logo.svg" width="83" height="30" alt="RSSchool logo">
       </a>
       <a class="footer-link-github" href="https://github.com/kuraini" target="_blank">
         <span class="visible-hidden">My github account</span>
