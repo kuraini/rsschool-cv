@@ -436,4 +436,180 @@ img {
     text-transform: none;
     padding: 15px;
   }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 60px;
+  }
+
+  .header .container {
+    justify-content: center;
+  }
+
+  .profile .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container--main {
+    align-items: flex-start;
+  }
+
+  .main,
+  .profile {
+    background: linear-gradient(to right, #5d7e98 0% 50%, #fafaf9 50% 100%);
+  }
+
+  .profile {
+    position: relative;
+  }
+
+  .profile::after {
+    content: "";
+    position: absolute;
+    bottom: 350px;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color: #5d7e98;
+  }
+
+  .profile-title {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    font-size: 36px;
+  }
+
+  .profile-name {
+    margin-right: 20px;
+  }
+
+  .profile-surname {
+    color: #5d7e98;
+  }
+
+  .profile-position {
+    align-self: flex-end;
+    width: 50%;
+    padding-left: 5%;
+    margin-bottom: 35px;
+
+    font-size: 24px;
+    color: #5d7e98;
+  }
+
+  .profile-img-wrapper,
+  .profile-img {
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile-img-wrapper {
+    align-self: flex-start;
+  }
+
+  .contacts,
+  .about,
+  .skills,
+  .code,
+  .projects,
+  .education,
+  .english {
+    width: 50%;
+  }
+
+  .contacts {
+    order: 1;
+    min-height: 350px;
+    margin-top: -350px;
+    margin-left: 50%;
+    padding-left: 5%;
+    z-index: 1;
+  }
+
+  .about {
+    order: 2;
+    padding-right: 5%;
+  }
+
+  .skills {
+    order: 4;
+    padding-right: 5%;
+  }
+
+  .skills-progress {
+    background-color: #9ea7b3;
+  }
+
+  .skills-progress::before {
+    background-color: #fafaf9;
+  }
+
+  .code {
+    order: 5;
+    padding-left: 5%;
+  }
+
+  .projects {
+    order: 7;
+    padding-left: 5%;
+  }
+
+  .education {
+    order: 3;
+    padding-left: 5%;
+  }
+
+  .english {
+    order: 6;
+    padding-right: 5%;
+  }
+
+  .english-link {
+    background-color: #9ea7b3;
+  }
+
+  .english-link:hover,
+  .english-link:focus {
+    color: #3f3b41;
+    background-color: #c9d0d9;
+  }
+
+  .about,
+  .skills,
+  .english {
+    color: #fafaf9;
+  }
+
+  .footer-link-rsschool {
+    margin-right: auto;
+  }
+
+  .footer-link-rsschool-logo {
+    width: 125px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 970px;
+    padding: 0 50px;
+  }
+
+  .profile::after {
+    bottom: 450px;
+  }
+
+  .profile-img-wrapper,
+  .profile-img {
+    width: 400px;
+    height: 400px;
+  }
 }
