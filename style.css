@@ -216,6 +216,8 @@ img {
 
   color: #fafaf9;
   text-transform: uppercase;
+
+  transition: 0.3s;
 }
 
 .nav-link:hover,
@@ -306,6 +308,8 @@ img {
 }
 .contacts-link {
   font-weight: 400;
+
+  transition: 0.3s;
 }
 
 .contacts-link:hover,
@@ -389,10 +393,6 @@ img {
   margin-bottom: 10px;
 }
 
-.projects-link {
-  text-align: center;
-}
-
 .technology-list {
   margin-bottom: 30px;
 }
@@ -401,7 +401,10 @@ img {
 .projects-link {
   padding: 10px;
 
+  text-align: center;
+
   background-color: #c9d0d9;
+  transition: 0.3s;
 }
 
 .english-link:hover,
@@ -418,6 +421,11 @@ img {
   color: #fafaf9;
 
   background-color: #5d7e98;
+}
+
+.footer-link-rsschool,
+.footer-link-github {
+  transition: 0.3s;
 }
 
 .footer-link-github {
