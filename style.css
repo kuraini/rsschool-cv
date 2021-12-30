@@ -1,3 +1,11 @@
+:root {
+  --light: #fafaf9;
+  --blue: #5d7e98;
+  --light-blue: #c9d0d9;
+  --grey: #9ea7b3;
+  --dark: #3f3b41;
+}
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -56,7 +64,7 @@ body {
   line-height: 1.5;
   color: #3f3b41;
 
-  background-color: #fafaf9;
+  background-color: var(--light);
 }
 
 a {
