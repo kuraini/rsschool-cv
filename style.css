@@ -135,6 +135,7 @@ img {
   background-color: #5d7e98;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .nav--closed .nav-toggle::before {
@@ -154,6 +155,16 @@ img {
   background-color: #c9d0d9;
 }
 
+.nav-toggle:hover::before,
+.nav-toggle:active::before {
+  background-color: #3f3b41;
+}
+
+.nav--closed .nav-toggle:hover::before,
+.nav--closed .nav-toggle:active::before {
+  box-shadow: 0 8px 0 0 #3f3b41, 0 16px #3f3b41;
+}
+
 .nav--opened .nav-toggle::before,
 .nav--opened .nav-toggle::after {
   content: "";
@@ -171,6 +182,13 @@ img {
 
 .nav--opened .nav-toggle::after {
   transform: rotate(-45deg);
+}
+
+.nav--opened .nav-toggle:hover::before,
+.nav--opened .nav-toggle:active::before,
+.nav--opened .nav-toggle:hover::after,
+.nav--opened .nav-toggle:active::after {
+  background-color: #3f3b41;
 }
 
 .nav-list {
