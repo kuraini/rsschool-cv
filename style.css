@@ -104,6 +104,10 @@ img {
   background-color: #5d7e98;
 }
 
+.nav {
+  min-height: 50px;
+}
+
 .nav-list,
 .contacts-list,
 .skills-list,
@@ -112,6 +116,102 @@ img {
   padding: 0;
 
   list-style: none;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 3;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+
+  background-color: #5d7e98;
+  border: none;
+  cursor: pointer;
+}
+
+.nav--closed .nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  width: 30px;
+  height: 2px;
+
+  background-color: #fafaf9;
+  box-shadow: 0 8px 0 0 #fafaf9, 0 16px #fafaf9;
+}
+
+.nav-toggle:hover,
+.nav-toggle:active {
+  background-color: #c9d0d9;
+}
+
+.nav--opened .nav-toggle::before,
+.nav--opened .nav-toggle::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: #fafaf9;
+}
+
+.nav--opened .nav-toggle::before {
+  transform: rotate(45deg);
+}
+
+.nav--opened .nav-toggle::after {
+  transform: rotate(-45deg);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  list-style: none;
+  transition: 0.3s;
+}
+
+.nav--opened .nav-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 100vh;
+  padding-top: 50px;
+
+  background-color: #5d7e98;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px 20px;
+
+  color: #fafaf9;
+  text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #3f3b41;
+
+  background-color: #c9d0d9;
+}
+
+@media (max-width: 767px) {
+  .nav--closed .nav-list {
+    display: none;
+  }
 }
 
 .profile {
@@ -319,4 +419,21 @@ img {
 .footer-link-rsschool:hover,
 .footer-link-rsschool:focus {
   transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav-link {
+    text-transform: none;
+    padding: 15px;
+  }
 }
