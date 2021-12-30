@@ -4,9 +4,184 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon3.ico">
+  <link rel="stylesheet" href="style.css">
   <title>CV - Svetlana Borisova</title>
 </head>
 <body>
-  <h1>Svetlana Borisova</h1>
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav nav nav--closed">
+        <button class="nav-toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#code">Code</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#english">English</a></li>
+        </ul>
+      </nav>      
+    </div>    
+  </header>
+
+  <main class="main">
+
+    <section class="profile section">
+      <div class="container">
+        <h1 class="profile-title">
+          <span class="profile-name">Svetlana</span>
+          <span class="profile-surname">Borisova</span>
+        </h1>
+        <p class="profile-position">Junior Front-end Developer</p>
+        <div class="profile-img-wrapper">
+          <img class="profile-img" src="assets/img/photo.jpg" alt="My photo" width="200" height="200">
+        </div>
+      </div>
+    </section>
+
+    <div class="container container--main">  
+      <section class="contacts section" id="contacts">
+        <h2 class="contacts-title title">Contacts</h2>
+
+        <ul class="contacts-list">
+          <li class="contacts-item contacts-item--email">
+            <p class="contacts-text">E-mail: 
+              <a class="contacts-link" href="mailto:kuraini7@gmail.com">kuraini7@gmail.com</a>
+            </p>
+          </li>
+          <li class="contacts-item contacts-item--github">
+            <p class="contacts-text">GitHub: 
+              <a class="contacts-link" href="https://github.com/kuraini">kuraini</a>
+            </p>
+          </li>
+          <li class="contacts-item contacts-item--discord">
+            <p class="contacts-text">Discord: 
+              <a class="contacts-link" href="https://discord.com/">Svetlana#9249</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about section" id="about">
+        <h2 class="about-title title">About me</h2>
+        <p class="about-text">I became interested in creating websites at the university. 
+          My speciality was not related to Computer Science. I have a diploma in advertising. 
+          But we had a web design course. It fascinated me. I started and successfully completed 
+          several courses at HTML Academy. And I keep learning since on.
+        </p>
+      </section>
+
+      <section class="skills section" id="skills">
+        <h2 class="skills-title title">Skills</h2>
+
+        <ul class="skills-list">
+          <li class="skills-item">
+            <span class="skills-name skills-name--html">HTML & CSS</span>
+            <div class="skills-progress">
+              <span class="visually-hidden">80%</span>
+            </div>
+          </li>
+          <li class="skills-item">
+            <span class="skills-name skills-name--pug">PUG & SCSS</span>
+            <div class="skills-progress">
+              <span class="visually-hidden">80%</span>
+            </div>
+          </li>
+          <li class="skills-item">
+            <span class="skills-name skills-name--js">JavaScript Basics</span>
+            <div class="skills-progress">
+              <span class="visually-hidden">30%</span>
+            </div>
+          </li>
+          <li class="skills-item">
+            <span class="skills-name skills-name--git">Git & GitHub</span>
+            <div class="skills-progress">
+              <span class="visually-hidden">20%</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="code section" id="code">
+        <h2 class="code-title title">Code example</h2>
+
+        <pre class="code-example">
+          <code class="code-js">
+            function even_or_odd(number) {
+              return number % 2 ? 'Odd' : 'Even';
+            }
+          </code>
+        </pre>
+      </section>
+
+      <section class="projects section" id="projects">
+        <h2 class="projects-title title">Projects</h2>
+
+        <ul class="projects-list">
+          <li class="projects-item">
+            <div class="projects-img-wrapper">
+              <img class="projects-img" src="assets/img/sedona-mobile.png" alt="Sedona" width="272" height="195">
+            </div>
+            <div class="projects-descr">
+              <h3 class="projects-name">Sedona</h3>
+              <p class="projects-text">An adaptive website about Sedona. Made with:</p>
+                <ul class="projects-technology technology-list">
+                  <li class="technology-item">HTML</li>
+                  <li class="technology-item">BEM</li>
+                  <li class="technology-item">SCSS</li>
+                  <li class="technology-item">Flexbox layout</li>
+                </ul>
+              <a class="projects-link" href="https://github.com/kuraini/142107-sedona">View project on GitHub</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="education section" id="education">
+        <h2 class="education-title title">Education</h2>
+
+        <ul class="education-list">
+          <li class="education-item">
+            <a class="education-link" href="https://rs.school/js-stage0/" target="_blank">
+              RS School Course "JavaScript/Front-end. Stage 0"
+            </a>
+            (in progress)
+          </li>
+
+          <li class="education-item">
+            <a class="education-link" href="https://htmlacademy.ru/" target="_blank">HTML Academy courses:</a> 
+            <ul class="education-nested-list">
+              <li class="education-nested-item">Professional HTML & CSS, level 1</li>
+              <li class="education-nested-item">Professional HTML & CSS, level 2</li>
+            </ul>
+          </li>
+          
+          <li class="education-item">Moscow University of finance and law</li>
+        </ul>
+      </section>
+
+      <section class="english section" id="english">
+        <h2 class="english-title title">English</h2>
+        <p class="english-text">B1 (Intermediate)</p>
+        <a class="english-link" href="https://www.efset.org/cert/uj1CUd">EF SET Certificate</a>
+      </section>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <a class="footer-link-rsschool" href="https://rs.school/js/" target="_blank">
+        <span class="visually-hidden">RSSchool - Course "JavaScript/Front-end"</span>
+        <img class="footer-link-rsschool-logo" src="assets/svg/icon-rss.svg" width="83" height="30" alt="RSSchool logo">
+      </a>
+      <a class="footer-link-github" href="https://github.com/kuraini" target="_blank">
+        <span class="visually-hidden">My github account</span>
+      </a>
+      <span class="footer-year">2022</span>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
 </html>
