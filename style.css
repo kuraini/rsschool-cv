@@ -30,3 +30,293 @@
       url('assets/fonts/montserrat-bold.woff') format('woff'),
       url('assets/fonts/montserrat-bold.ttf') format('ttf');
 }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #3f3b41;
+
+  background-color: #fafaf9;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.title {
+  margin-top: 0;
+
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header {
+  position: relative;
+
+  color: #fafaf9;
+
+  background-color: #5d7e98;
+}
+
+.nav-list,
+.contacts-list,
+.skills-list,
+.projects-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.profile {
+  color: #fafaf9;
+  text-align: center;
+
+  background-color: #5d7e98;
+}
+
+.profile-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.profile-position {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.profile-img-wrapper {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+}
+
+.contacts-item {
+  position: relative;
+  padding-left: 50px;
+}
+
+.contacts-item::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 15px;
+  width: 20px;
+  height: 20px;
+
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contacts-item--email::before {
+  background-image: url("assets/svg/icon-email.svg");
+}
+
+.contacts-item--github::before {
+  background-image: url("assets/svg/icon-github.svg");
+}
+
+.contacts-item--discord::before {
+  background-image: url("assets/svg/icon-discord.svg");
+}
+
+.contacts-text {
+  font-weight: 700;
+}
+.contacts-link {
+  font-weight: 400;
+}
+
+.contacts-link:hover,
+.contacts-link:focus,
+.education-link:hover,
+.education-link:focus {
+  color: #5d7e98;
+}
+
+.skills-list,
+.projects-list {
+  padding: 0;
+  list-style: none;
+}
+
+.skills-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-progress {
+  position: relative;
+  width: 40%;
+  height: 10px;
+
+  font-size: 0;
+
+  background-color: #5d7e98;
+  border-radius: 5px;
+}
+
+.skills-progress::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  z-index: 1;
+
+  background-color: #c9d0d9;
+  border-radius: 5px;
+}
+
+.skills-name--js + .skills-progress::before {
+  width: 30%;
+}
+
+.skills-name--git + .skills-progress::before {
+  width: 20%;
+}
+
+.code-example {
+  overflow-x: auto;
+}
+
+.projects-item,
+.projects-descr {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-img-wrapper {
+  flex-shrink: 0;
+  align-self: center;
+  width: 272px;
+  overflow: hidden;
+}
+
+.projects-name {
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.projects-text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.projects-link {
+  text-align: center;
+}
+
+.technology-list {
+  margin-bottom: 30px;
+}
+
+.english-link,
+.projects-link {
+  padding: 10px;
+
+  background-color: #c9d0d9;
+}
+
+.english-link:hover,
+.english-link:focus,
+.projects-link:hover,
+.projects-link:focus {
+  color: #fafaf9;
+
+  background-color: #5d7e98;
+}
+
+.footer {
+  padding: 30px 0;
+  color: #fafaf9;
+
+  background-color: #5d7e98;
+}
+
+.footer-link-github {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+
+  background-image: url("assets/svg/icon-github-white.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.footer-link-github:hover,
+.footer-link-github:focus,
+.footer-link-rsschool:hover,
+.footer-link-rsschool:focus {
+  transform: scale(1.2);
+}
