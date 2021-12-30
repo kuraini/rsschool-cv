@@ -11,12 +11,13 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="header-nav nav">
+      <nav class="header-nav nav nav--closed">
+        <button class="nav-toggle" type="button"><span class="visually-hidden">Open menu</span></button>
         <ul class="nav-list">
           <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#code" class="nav-link">Code example</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
           <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
           <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
           <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
@@ -26,39 +27,43 @@
   </header>
 
   <main class="main">
-    <div class="container">
-      <section class="profile">
+
+    <section class="profile section">
+      <div class="container">
         <h1 class="profile-title">
-          <span class="profile-name">Svetlana Borisova</span>
-          <span class="profile-position">Junior Front-end Developer</span>
+          <span class="profile-name">Svetlana</span>
+          <span class="profile-surname">Borisova</span>
         </h1>
+        <p class="profile-position">Junior Front-end Developer</p>
         <div class="profile-img-wrapper">
           <img class="profile-img" src="assets/img/photo.jpg" alt="My photo" width="200" height="200">
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="contacts" id="contacts">
+    <div class="container container--main">  
+      <section class="contacts section" id="contacts">
         <h2 class="contacts-title title">Contacts</h2>
 
         <ul class="contacts-list">
-          <li class="contacts_item">
-            <p class="contacts-text contacts-text--mail">E-mail: 
+          <li class="contacts-item contacts-item--email">
+            <p class="contacts-text">E-mail: 
               <a class="contacts-link" href="mailto:kuraini7@gmail.com">kuraini7@gmail.com</a>
             </p>
           </li>
-          <li class="contacts_item">
-            <p class="contacts-text contacts-text--github">GitHub: 
+          <li class="contacts-item contacts-item--github">
+            <p class="contacts-text">GitHub: 
               <a class="contacts-link" href="https://github.com/kuraini">kuraini</a>
             </p>
           </li>
-          <li class="contacts_item">
-            <p class="contacts-text contacts-text--discord">Discord: Svetlana#9249
-            </p>
+          <li class="contacts-item contacts-item--discord">
+            <p class="contacts-text">Discord: 
+              <a href="https://discord.com/" class="contacts-link">Svetlana#9249</a></p>
           </li>
         </ul>
       </section>
 
-      <section class="about" id="about">
+      <section class="about section" id="about">
         <h2 class="about-title title">About me</h2>
         <p class="about-text">I became interested in creating websites at the university. 
           My speciality was not related to Computer Science. I have a diploma in advertising. 
@@ -67,18 +72,30 @@
         </p>
       </section>
 
-      <section class="skills" id="skills">
+      <section class="skills section" id="skills">
         <h2 class="skills-title title">Skills</h2>
 
         <ul class="skills-list">
-          <li class="skills-item">HTML & CSS</li>
-          <li class="skills-item">SCSS</li>
-          <li class="skills-item">JavaScript Basics</li>
-          <li class="skills-item">Git & Github</li>
+          <li class="skills-item">
+            <span class="skills-name skills-name--html">HTML & CSS</span>
+            <span class="skills-progress">80%</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-name skills-name--pug">PUG & SCSS</span>
+            <span class="skills-progress">80%</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-name skills-name--js">JavaScript Basics</span>
+            <span class="skills-progress">30%</span>
+          </li>
+          <li class="skills-item">
+            <span class="skills-name skills-name--git">Git & GitHub</span>
+            <span class="skills-progress">20%</span>
+          </li>
         </ul>
       </section>
 
-      <section class="code" id="code">
+      <section class="code section" id="code">
         <h2 class="code-title title">Code example</h2>
 
         <pre class="code-example">
@@ -90,27 +107,30 @@
         </pre>
       </section>
 
-      <section class="projects" id="projects">
+      <section class="projects section" id="projects">
         <h2 class="projects-title title">Projects</h2>
 
         <ul class="projects-list">
           <li class="projects-item">
-            <h3 class="projects-title">Sedona</h3>
-            <img class="projects-img" src="assets/img/sedona.png" alt="Sedona" width="180" height="240">
-            <p class="project-text">An adaptive landing page about Sedona. Made with:
-              <ul class="projects-technology technology-list">
-                <li class="technology-item">HTML</li>
-                <li class="technology-item">BEM naming</li>
-                <li class="technology-item">SCSS</li>
-                <li class="technology-item">Flexbox layout</li>
-              </ul>
-            </p>
-            <a href="#" class="projects-item-link">View project</a>
+            <div class="projects-img-wrapper">
+              <img class="projects-img" src="assets/img/sedona-mobile.png" alt="Sedona" width="272" height="195">
+            </div>
+            <div class="projects-descr">
+              <h3 class="projects-name">Sedona</h3>
+              <p class="projects-text">An adaptive website about Sedona. Made with:</p>
+                <ul class="projects-technology technology-list">
+                  <li class="technology-item">HTML</li>
+                  <li class="technology-item">BEM</li>
+                  <li class="technology-item">SCSS</li>
+                  <li class="technology-item">Flexbox layout</li>
+                </ul>
+              <a href="#" class="projects-link">View project</a>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section class="education" id="education">
+      <section class="education section" id="education">
         <h2 class="education-title title">Education</h2>
 
         <ul class="education-list">
@@ -133,12 +153,10 @@
         </ul>
       </section>
 
-      <section class="english" id="english">
+      <section class="english section" id="english">
         <h2 class="english-title title">English</h2>
-        <p class="english-text">
-          B1 (Intermediate)
-          <a class="english-link" href="https://www.efset.org/cert/uj1CUd">EF SET Certificate</a>
-        </p>
+        <p class="english-text">B1 (Intermediate)</p>
+        <a class="english-link" href="https://www.efset.org/cert/uj1CUd">EF SET Certificate</a>
       </section>
     </div>
   </main>
@@ -146,11 +164,11 @@
   <footer class="footer">
     <div class="container">
       <a class="footer-link-rsschool" href="https://rs.school/js/" target="_blank">
-        <span class="visible-hidden">RSSchool - Course "JavaScript/Front-end"</span>
-        <img class="footer-link-rsschool-logo" src="assets/svg/rs_school_logo.svg" width="83" height="30" alt="RSSchool logo">
+        <span class="visually-hidden">RSSchool - Course "JavaScript/Front-end"</span>
+        <img class="footer-link-rsschool-logo" src="assets/svg/icon-rss.svg" width="83" height="30" alt="RSSchool logo">
       </a>
       <a class="footer-link-github" href="https://github.com/kuraini" target="_blank">
-        <span class="visible-hidden">My github account</span>
+        <span class="visually-hidden">My github account</span>
       </a>
       <span class="footer-year">2022</span>
     </div>
