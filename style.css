@@ -194,13 +194,8 @@ img {
 .nav-list {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 
   text-align: center;
-
-  list-style: none;
-  transition: 0.3s;
 }
 
 .nav--opened .nav-list {
