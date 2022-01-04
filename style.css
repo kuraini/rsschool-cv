@@ -102,6 +102,7 @@ img {
 
 .title {
   margin-top: 0;
+  margin-bottom: 30px;
 
   font-size: 20px;
   font-weight: 700;
@@ -283,40 +284,34 @@ img {
 
 .contacts-item {
   position: relative;
-  padding-left: 50px;
-}
-
-.contacts-item::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 10px);
-  left: 15px;
-  width: 20px;
-  height: 20px;
-
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.contacts-item--email::before {
-  background-image: url("assets/svg/icon-email.svg");
-}
-
-.contacts-item--github::before {
-  background-image: url("assets/svg/icon-github.svg");
-}
-
-.contacts-item--discord::before {
-  background-image: url("assets/svg/icon-discord.svg");
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .contacts-text {
+  order: 2;
+  margin-right: 10px;
+
   font-weight: 700;
 }
+
 .contacts-link {
+  order: 3;
+
   font-weight: 400;
 
+  transition: 0.3s;
+}
+
+.contacts-icon {
+  order: 1;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+
+  fill: var(--dark);
   transition: 0.3s;
 }
 
@@ -325,6 +320,11 @@ img {
 .education-link:hover,
 .education-link:focus {
   color: var(--blue);
+}
+
+.contacts-link:hover + .contacts-icon,
+.contacts-link:focus + .contacts-icon  {
+  fill: var(--blue);
 }
 
 .skills-list,
@@ -370,7 +370,17 @@ img {
 }
 
 .code-example {
+  margin: 0;
+
   overflow-x: auto;
+}
+
+.code-descr {
+  padding: 15px;
+
+  text-align: center;
+
+  background-color: var(--light-blue);
 }
 
 .projects-item,
@@ -435,14 +445,11 @@ img {
 }
 
 .footer-link-github {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   margin: 10px;
 
-  background-image: url("assets/svg/icon-github-white.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  fill: var(--light);
 }
 
 .footer-link-github:hover,

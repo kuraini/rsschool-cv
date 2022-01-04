@@ -46,19 +46,26 @@
         <h2 class="contacts-title title">Contacts</h2>
 
         <ul class="contacts-list">
-          <li class="contacts-item contacts-item--email">
-            <p class="contacts-text">E-mail: 
-              <a class="contacts-link" href="mailto:kuraini7@gmail.com">kuraini7@gmail.com</a>
-            </p>
+          <li class="contacts-item">
+            <span class="contacts-text">Telegram:</span>
+            <a href="https://t.me/kurai_ni" class="contacts-link">@kurai_ni</a>
+            <svg class="contacts-icon" width="24" height="24">
+              <use xlink:href="assets/svg/sprite.svg#icon-telegram"></use>
+            </svg>
           </li>
-          <li class="contacts-item contacts-item--github">
-            <p class="contacts-text">GitHub: 
-              <a class="contacts-link" href="https://github.com/kuraini">kuraini</a>
-            </p>
+          <li class="contacts-item">
+            <span class="contacts-text">Github:</span>
+            <a href="https://github.com/kuraini" class="contacts-link">kuraini</a>
+            <svg class="contacts-icon" width="24" height="24">
+              <use xlink:href="assets/svg/sprite.svg#icon-github"></use>
+            </svg>
           </li>
-          <li class="contacts-item contacts-item--discord">
-            <p class="contacts-text">Discord: 
-              <a class="contacts-link" href="https://discord.com/">Svetlana#9249</a></p>
+          <li class="contacts-item">
+            <span class="contacts-text">Discord:</span>
+            <a href="https://discord.com/" class="contacts-link">Svetlana#9249</a>
+            <svg class="contacts-icon" width="24" height="24">
+              <use xlink:href="assets/svg/sprite.svg#icon-discord"></use>
+            </svg>
           </li>
         </ul>
       </section>
@@ -106,13 +113,16 @@
       <section class="code section" id="code">
         <h2 class="code-title title">Code example</h2>
 
-        <pre class="code-example">
-          <code class="code-js">
-            function even_or_odd(number) {
-              return number % 2 ? 'Odd' : 'Even';
-            }
-          </code>
-        </pre>
+        <figure class="code-example">
+          <pre class="code-js"><code>
+function even_or_odd(number) {
+  return number % 2 ? 'Odd' : 'Even';
+}
+          </code></pre>
+          <figcaption class="code-descr">А function that takes an integer as an argument and returns "Even"
+            for even numbers or "Odd" for odd numbers.
+          </figcaption>
+        </figure>
       </section>
 
       <section class="projects section" id="projects">
@@ -177,6 +187,9 @@
       </a>
       <a class="footer-link-github" href="https://github.com/kuraini" target="_blank">
         <span class="visually-hidden">My github account</span>
+        <svg class="footer-link-github-icon" width="24" height="24">
+          <use xlink:href="assets/svg/sprite.svg#icon-github"></use>
+        </svg>
       </a>
       <span class="footer-year">2022</span>
     </div>
